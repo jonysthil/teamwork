@@ -15,14 +15,93 @@
 	--nav_footer: #8eafc4;
 	--btn_active: #3c78d8;
 	--btn_default: #ffffff;
-  }
+	--black: #000000;
+	--text-important: #0b5394;
+}
+
+/* Cargar fuente principal */
+@font-face {
+	font-family: 'Ninito Sans';
+	src: url('../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
 
 /* Etilo general al documento */
 
 body {
+	font-family: 'Ninito Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: var(--background);
+}
+
+
+/* Estilos para los textos */
+
+.unidad-text {
+	font-size: 18px;
+	color: var(--black);
+	text-align: justify;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.unidad-name {
+	font-size: 26px;
+	text-align: start;
+	font-style: normal;
+	font-weight: 900;
+	color: var(--btn_active);
+}
+
+.unidad-title {
+	font-size: 22px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 600;
+	color: var(--btn_active);
+}
+
+.unidad-important {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	color: var(--text-important);
+}
+
+.unidad-instruction {
+	display: flex;
+	font-size: 18px;
+	text-align: justify;
+	font-style: normal;
+	font-weight: 700;
+	color: var(--black);
+	line-height: normal;
+}
+
+#row {
+	flex-direction: row;
+}
+
+.unidad-font {
+	font-size: 14px;
+	text-align: end;
+	font-style: normal;
+	font-weight: 400;
+	color: var(--black);
+}
+
+.base-icon {
+	border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    background: var(--btn_active);
+    color: var(--btn_default);
+	text-align: center;
+    font-size: 18px;
+	margin-right: 10px;
 }
 
 .full-container {
@@ -40,8 +119,9 @@ body {
 .container-banner img {
 	width: 100%;
 }
-/* Termina sexxión banner */
+/* Termina sección banner */
 
+/* Inicia sección nav */
 .navbar {
 	background-color: var(--nav_footer);
 	justify-content: space-between;
@@ -76,15 +156,28 @@ body {
 	color: var(--btn_default);
 	opacity: 0.8;
 }
+/* Termina sección nav */
 
 .container-main {
 	background-color: var(--btn_default);
 	padding: 15px;
 }
 
+/* efecto para imagen */
+.card-unidad:hover {
+	opacity: 0.8;
+	transition-duration: 1s;
+	transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+
 footer {
 	background-color: var(--nav_footer);
 	padding: 15px;
 	color: var(--btn_default);
+	font-size: 10px;
+	text-align: start;
+	font-style: normal;
+	font-weight: 200;
 }
 
