@@ -31,7 +31,7 @@ body {
 	padding: 0;
 }
 
-/* Sección banner */
+/* Inicia sección banner */
 .container-banner {
 	background-color: var(--header);
 	padding: 10px;
@@ -40,11 +40,12 @@ body {
 .container-banner img {
 	width: 100%;
 }
+/* Termina sexxión banner */
 
 .navbar {
 	background-color: var(--nav_footer);
 	justify-content: space-between;
-	padding: 10px 55px;
+	padding: 10px 150px;
 }
 
 .btn-nav {
@@ -74,5 +75,16 @@ body {
 	border-color: transparent;
 	color: var(--btn_default);
 	opacity: 0.8;
+}
+
+.container-main {
+	background-color: var(--btn_default);
+	padding: 15px;
+}
+
+footer {
+	background-color: var(--nav_footer);
+	padding: 15px;
+	color: var(--btn_default);
 }
 
