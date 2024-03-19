@@ -1,0 +1,78 @@
+/*
+	main.css
+
+	Archivo principal de estilos personalizados
+
+	Jonathan Jimenez Gamero
+	Projecto: TeamWork (proyecto de reclutamiento)
+	jonysthil 2024
+
+*/
+
+:root {
+	--background: #9ed0f0;
+	--header: #b4dbf8;
+	--nav_footer: #8eafc4;
+	--btn_active: #3c78d8;
+	--btn_default: #ffffff;
+  }
+
+/* Etilo general al documento */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--background);
+}
+
+.full-container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Sección banner */
+.container-banner {
+	background-color: var(--header);
+	padding: 10px;
+}
+
+.container-banner img {
+	width: 100%;
+}
+
+.navbar {
+	background-color: var(--nav_footer);
+	justify-content: space-between;
+	padding: 10px 55px;
+}
+
+.btn-nav {
+	background-color: var(--btn_default);
+	color: var(--btn_active);
+	box-shadow: 0px 3px 0px 0px rgba(60, 120, 216, 0.75);
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(60, 120, 216, 0.75);
+	-moz-box-shadow: 0px 3px 0px 0px rgba(60, 120, 216, 0.75);
+}
+
+.btn-nav.active {
+	background-color: var(--btn_active);
+	border-color: transparent;
+	color: var(--btn_default);
+	box-shadow: 0px 3px 0px 0px rgba(103, 155, 238, 0.75);
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(103, 155, 238, 0.75);
+	-moz-box-shadow: 0px 3px 0px 0px rgba(103, 155, 238, 0.75);
+}
+
+.btn-nav:hover {
+	background-color: var(--btn_default);
+	opacity: 0.8;
+}
+
+.btn-nav.active:hover {
+	background-color: var(--btn_active);
+	border-color: transparent;
+	color: var(--btn_default);
+	opacity: 0.8;
+}
+
