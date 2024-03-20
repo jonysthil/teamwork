@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/bootstrap-icons/font/bootstrap-icons.css">
-	
-	<link rel="stylesheet" href="./assets/css/main.css">
-	<title>Trabajo en equipo</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/bootstrap-icons/font/bootstrap-icons.css">
+		
+		<link rel="stylesheet" href="./assets/css/main.css">
+		<link rel="stylesheet" href="./assets/css/responsive.css">
+		<title>Trabajo en equipo</title>
+	</head>
 <body>
 	
 	<div class="container">
-		<div class="row justify-content-md-center justify-content-lg-center">
+		  <div class="row justify-content-md-center justify-content-lg-center">
 			<div class="col col-md-8 col-lg-12 full-container">
+
 			
 				<!-- Start Header -->
 				<section class="container-banner">
@@ -25,19 +27,52 @@
 				</section>
 				<!-- End Header -->
 
-				<div class="row">
+
+
+				<header>
+					<nav class="menu">
+						<button class="nav-mobile" id="nav-mobile">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="container-nav">
+							<ul class="nav-menu">
+								<li><a class="btn btn-nav active" href="index.html">Inicio</a></li>
+								<li><a class="btn btn-nav" href="unidad1.html">Unidad 1</a></li>
+								<li><a class="btn btn-nav" href="#">Unidad 2</a></li>
+								<li><a class="btn btn-nav" href="#">Unidad 3</a></li>
+								<li><a class="btn btn-nav" href="#">Unidad 4</a></li>
+								<li><a class="btn btn-nav" href="#">Unidad 5</a></li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+  
+  
+
+				<!-- <div class="row">
 					<div class="col-12">
-						<nav class="navbar">
-							<a href="index.html" class="btn btn-nav active">Inicio</a>
-							<a href="unidad1.html" class="btn btn-nav">Unidad 1</a>
-							<a href="#" class="btn btn-nav">Unidad 2</a>
-							<a href="#" class="btn btn-nav">Unidad 3</a>
-							<a href="#" class="btn btn-nav">Unidad 4</a>
-							<a href="#" class="btn btn-nav">Unidad 5</a>
+						<nav class="navbar container-nav">
+							<div class="container-fluid">
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<ul>
+									<li><a href="index.html" class="btn btn-nav active">Inicio</a></li>
+									<li><a href="unidad1.html" class="btn btn-nav">Unidad 1</a></li>
+									<li><a href="#" class="btn btn-nav">Unidad 2</a></li>
+									<li><a href="#" class="btn btn-nav">Unidad 3</a></li>
+									<li><a href="#" class="btn btn-nav">Unidad 4</a></li>
+									<li><a href="#" class="btn btn-nav">Unidad 5</a></li>
+								</ul>								
+							</div>
 						</nav>
 					</div>
-				</div>
-
+				</div> -->
+				
+				
+				
 				<div class="container-main">
 					<div class="row">
 						<div class="col-md-6 text-start">
@@ -108,17 +143,19 @@
 
 				<footer>
                     <div class="row">
-                        <div class="col-6 text-start">Página creada por: Jonathan Jimenez Gamero</div>
+						<div class="col-6 text-start">Página creada por: Jonathan Jimenez Gamero</div>
                         <div class="col-6 text-end">Marzo/2024</div>
                     </div>
                 </footer>
-
+				
 			</div>
 		</div>
 	</div>
-
+	
+	<script src="./assets/js/jquery-3.7.1.min.js.js" ></script>
 	<script src="./assets/bootstrap/js/bootstrap.bundle.min.js" ></script>
 	<script src="./assets/bootstrap/js/popper.min.js.js" ></script>
 	<script src="./assets/bootstrap/js/bootstrap.min.js" ></script>
+	<script src="./assets/js/main.js" ></script>
 </body>
 </html>

@@ -9,15 +9,7 @@
 
 */
 
-:root {
-	--background: #9ed0f0;
-	--header: #b4dbf8;
-	--nav_footer: #8eafc4;
-	--btn_active: #3c78d8;
-	--btn_default: #ffffff;
-	--black: #000000;
-	--text-important: #0b5394;
-}
+@import url("colors.css");
 
 /* Cargar fuente principal */
 @font-face {
@@ -122,11 +114,6 @@ body {
 /* Termina sección banner */
 
 /* Inicia sección nav */
-.navbar {
-	background-color: var(--nav_footer);
-	justify-content: space-between;
-	padding: 10px 150px;
-}
 
 .btn-nav {
 	background-color: var(--btn_default);
@@ -181,3 +168,36 @@ footer {
 	font-weight: 200;
 }
 
+
+/* Definimos un ancho fluido y una altura fija para nuestro menú */
+header {
+	background: var(--nav_footer);
+	height: 60px;
+	position: relative;
+	width: 100%;
+}
+
+
+/* ocultamos botón #nav-mobile */
+#nav-mobile { 
+	display: none; 
+}
+
+/* Nuestro nav con id .menu lo flotaremos a la derecha */
+.menu {
+	position: absolute;
+	width: 100%;
+	padding: 5px 150px;
+}
+
+/* Alineamos los items de forma horizontal */
+.menu li {
+	display: inline-flex;
+	margin-right: 25px;
+	justify-content: space-between;
+	padding: 5px !important;
+}
+
+.open-menu {
+	box-shadow: none;
+}

@@ -1,0 +1,96 @@
+@import url("colors.css");
+
+@media screen and (max-width: 1200px) {
+    .menu li {
+        display: inline-flex;
+        margin-right: 5px;
+        justify-content: space-between;
+        padding: 3px !important;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .card-unidad:hover {
+        opacity: 0.8;
+        transition-duration: 1s;
+        transform: scale(1.1, 1.1);
+        z-index: 9;
+    }
+
+    .container-nav {
+        position: absolute;
+        width: 100%;
+        background: var(--nav_footer);;
+    }
+
+    .btn-nav {
+        box-shadow: 0px 3px 0px 0px rgba(60, 120, 216, 0.75);
+        -webkit-box-shadow: 0px 3px 0px 0px rgba(60, 120, 216, 0.75);
+        -moz-box-shadow: 0px 3px 0px 0px rgba(60, 120, 216, 0.75);
+        width: 100%;
+        margin-bottom: 2px;
+    }
+
+    /* mostramos el boton para mobile*/
+    #nav-mobile { 
+        display: block; 
+    }
+
+    /* Fijamos nuestro nav en 100% ancho */
+    .menu {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    /*   Quitamos estilos por defecto de el tag UL */
+    .menu ul {
+        max-height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 14px;
+    }
+
+    /* Convertimos nuestra lista de enlaces en un menú vertical */
+    .menu li {
+        display: block;
+    }
+
+    /* Agregamos una animación al despliegue del menú */
+    .menu .open-menu {
+        box-shadow: 0 1px 2px rgba(0,0,0,.5);
+        max-height: 400px;
+        transition: max-height .4s ease;
+    }
+  
+    /* Botón mostrar menú */
+    #nav-mobile {
+        background: var(--btn_active);
+        border: 0;
+        cursor: pointer;
+        float: right;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 0;
+        top: -60px;
+        opacity: 0.6;
+    }
+
+    #nav-mobile .nav-open {
+        opacity: 1;
+    }
+
+    #nav-mobile span {
+        display: block;
+        width: 60%;
+        margin: 4px auto;
+        height: 4px;
+        background: var(--btn_default)
+    }
+
+}
